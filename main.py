@@ -3,7 +3,7 @@ import requests
 import time
 import json
 import filetype  # check the filetype
-import  logging
+import logging
 
 
 from flask_cors import *
@@ -12,7 +12,6 @@ from flask import Flask, render_template, request, Response, redirect, url_for, 
 with open("config.json", "r") as f:
     load_dict = json.load(f)
     print(load_dict)
-
 app = Flask(__name__)
 CORS(app, supports_credentials=True)
 
